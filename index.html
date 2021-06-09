@@ -18,10 +18,22 @@
 </head>
 <body>
 <header>
-  <div class="container flex header">
-    <img src="images/logo.svg" alt="website logo" class="logo">
-    <img src="images/icon-hamburger.svg" alt="website logo" class="hamburger" id="hamburger">
-    <nav class="nav menu-desktop">
+  <div class="container">
+    <div class="flex header">
+      <img src="images/logo.svg" alt="website logo" class="logo">
+      <img src="images/icon-hamburger.svg" alt="website logo" class="hamburger" id="hamburger">
+      <nav class="nav menu-desktop">
+        <ul >
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </nav>
+      <button class="button desktop-only">Request Invite</button>
+    </div>
+    <nav class="nav menu-mobile fade-out" id="menu-mobile">
       <ul >
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
@@ -30,42 +42,35 @@
         <li><a href="#">Careers</a></li>
       </ul>
     </nav>
-    <button class="button desktop-only">Request Invite</button>
+    
   </div>
-  <nav class="nav menu-mobile fade-out" id="menu-mobile">
-    <ul >
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Careers</a></li>
-    </ul>
-  </nav>
-
 </header>
 
-<div class="hero container">
+<div class="hero">
   <!-- <div class="mockups-image-mobile">
     <img src="images/image-mockups.png" alt="mockups" >
   </div> -->
-  <div class="mockups-image-desktop">
-    <img src="images/image-mockups.png" alt="mockups" >
+  <div class="container">
+
+    <div class="mockups-image">
+      <img src="images/image-mockups.png" alt="mockups" >
+    </div>
+    <div class="text-container">
+      <h1 class="title">Next generation digital banking</h1>
+      <p class="paragraph">Take your financial life online. Your Easybank account will be a one-stop-shop 
+        for spending, saving, budgeting, investing, and much more.</p>
+        <button class="button">Request Invite</button>
+        
+      </div>
   </div>
-  <div class="text-container">
-    <h1 class="title">Next generation digital banking</h1>
-    <p class="paragraph">Take your financial life online. Your Easybank account will be a one-stop-shop 
-      for spending, saving, budgeting, investing, and much more.</p>
-    <button class="button">Request Invite</button>
-      
-</div>
 
 </div>
 
 <section class="why">
   <div class="container">
     <h1 class="title">Why choose Easybank?</h1>
-    <p class="paragraph">We leverage Open Banking to turn your bank account into your financial hub. Control 
-      your finances like never before.</p>
+    <p class="paragraph">We leverage Open Banking to turn your bank account into your financial hub.<br>
+      Control your finances like never before.</p>
 
     <div class="features">
       <div class="feature">
