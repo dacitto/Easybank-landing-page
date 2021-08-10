@@ -101,22 +101,28 @@ a:hover {
   color: var(--Lime-Green) !important;
 }
 
-.header {
+header {
   position: fixed;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 0;
   background-color: #fff;
+}
+
+header .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav ul {
@@ -234,6 +240,11 @@ a:hover {
   background-color: #fff;
   display: -ms-grid;
   display: grid;
+  -ms-grid-rows: auto auto 1.2fr 2fr;
+      grid-template-rows: auto auto 1.2fr 2fr;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   overflow: hidden;
   padding-bottom: 40px;
 }
@@ -331,8 +342,8 @@ footer .copyrights {
   .desktop-only {
     display: inline-block;
   }
-  .header {
-    padding: 0 1rem;
+  header {
+    padding: 0;
   }
   .menu-desktop {
     display: -webkit-box;
