@@ -52,7 +52,7 @@ The designs were created to the following widths:
 }
 
 body {
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   margin: 0;
   padding: 0;
@@ -111,6 +111,8 @@ header {
   width: 100%;
   padding: 1rem 0;
   background-color: #fff;
+  -webkit-box-shadow: 0 2px 20px 2px #33333322;
+          box-shadow: 0 2px 20px 2px #33333322;
 }
 
 header .header {
@@ -264,7 +266,8 @@ header .header {
   line-height: 1.2;
 }
 
-.articles .card .title, .articles .card .paragraph {
+.articles .card .title,
+.articles .card .paragraph {
   padding: 0 2rem;
 }
 
@@ -303,8 +306,23 @@ footer .social-links {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 10px;
   margin-top: 50px;
+}
+
+footer .social-links .link {
+  margin: 0 10px;
+}
+
+footer .social-links .link svg {
+  -webkit-transition: 0.1s all ease-in-out;
+  transition: 0.1s all ease-in-out;
+}
+
+footer .social-links .link:hover svg {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.1s all ease-in-out;
+  transition: 0.1s all ease-in-out;
 }
 
 footer .links a {
@@ -369,7 +387,7 @@ footer .copyrights {
             box-sizing: border-box;
   }
   .menu-desktop ul li a:hover::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     width: 100%;
