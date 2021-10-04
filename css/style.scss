@@ -109,7 +109,7 @@ header {
   width: 100%;
   padding: 1rem 0;
   background-color: #fff;
-  box-shadow: 0 2px 20px 2px #33333322;
+  box-shadow: 0 2px 20px 14px #33333322;
   .header {
     display: flex;
     justify-content: space-between;
@@ -298,6 +298,10 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+  .hero {
+    background-position-y: -6rem;
+    background-size: cover;
+  }
   .features {
     grid-template-columns: 1fr 1fr;
   }
